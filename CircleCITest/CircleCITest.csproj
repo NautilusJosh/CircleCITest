@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <UserSecretsId>aspnet-CircleCITest-1A406FD6-4476-4872-8ECF-1C57165A865E</UserSecretsId>
-    <DockerTargetOS>Windows</DockerTargetOS>
+    <DockerTargetOS>Linux</DockerTargetOS>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <None Include=".circleci\config.yml" />
+    <None Include=".circleci\config_php.yml" />
   </ItemGroup>
 
 </Project>

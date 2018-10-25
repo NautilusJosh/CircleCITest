@@ -1,0 +1,27 @@
+﻿version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/php:7.1-browsers
+
+    working_directory: /CircleCITest
+
+    steps:
+      - checkout
+      - run:
+          name: Install .Net Core
+          command: |
+            apt-get -y install wget
+            wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb
+            dpkg -i packages-microsoft-prod.deb
+            apt-get -y install apt-transport-https
+            apt-get -y update
+            apt-get -y install dotnet-sdk-2.1.202
+            
+      - run:
+          name: Build project
+          command: dotnet build
+
+      - run:
+          name: Run project
+          command: dotnet run
