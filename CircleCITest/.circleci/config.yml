@@ -2,7 +2,7 @@
 jobs:
   build:
     docker:
-      - image: circleci/microsoft/dotnet:latest
+      - image: circleci/microsoft/dotnet:2.1-aspnetcore-runtime
     steps:
       - checkout
       - run:
