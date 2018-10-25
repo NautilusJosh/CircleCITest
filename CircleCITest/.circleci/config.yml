@@ -3,6 +3,9 @@ jobs:
   build:
     docker:
       - image: circleci/microsoft/dotnet:2.1-aspnetcore-runtime
+
+    working_directory: /CircleCITest
+
     steps:
       - checkout
       - run:
