@@ -1,0 +1,14 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: microsoft/dotnet
+
+    working_directory: ~/CircleCITest
+
+    steps:
+      - checkout
+
+      - run:
+          name: Dotnet Info
+          command: dotnet --info
