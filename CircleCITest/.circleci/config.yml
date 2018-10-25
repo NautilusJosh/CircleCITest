@@ -2,7 +2,7 @@
 jobs:
   build:
     docker:
-      - image: circleci/microsoft/dotnet:2.1-sdk-nanoserver-1803
+      - image: circleci/microsoft/dotnet:latest
     steps:
       - checkout
       - run:
