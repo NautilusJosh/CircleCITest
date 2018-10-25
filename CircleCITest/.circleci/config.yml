@@ -4,13 +4,11 @@ jobs:
     docker:
       - image: microsoft/dotnet
 
-    working_directory: /CircleCITest
+    working_directory: ~/CircleCITest
 
     steps:
       - checkout
+
       - run:
-          name: Greeting
-          command: echo Hello, world.
-      - run:
-          name: Print the Current Time
-          command: date
+          name: Dotnet Info
+          command: dotnet --info
