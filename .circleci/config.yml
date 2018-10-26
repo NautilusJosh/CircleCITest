@@ -12,3 +12,7 @@ jobs:
       - run:
           name: Dotnet Info
           command: dotnet --info
+
+      - run:
+          name: Run xUnit Tests
+          command: dotnet test CircleCITest.Tests
