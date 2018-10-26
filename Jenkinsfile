@@ -1,9 +1,13 @@
 pipeline{
-    agent { docker { image 'microsoft/dotnet' } }
+    agent { 
+        docker {
+            image 'microsoft/dotnet' 
+        }
+    }
     stages {
-        stage('build'){
+        stage('Example'){
             steps {
-                sh 'dotnet --info'
+                powershell 'dotnet --info'
             }
         }
     }
