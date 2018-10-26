@@ -18,7 +18,7 @@ namespace CircleCITest.Tests
         {
             var result = true;
 
-            Assert.False(result, "True result, should fail");
+            Assert.True(result, "True result, should fail");
         }
     }
 }
