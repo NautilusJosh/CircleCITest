@@ -12,6 +12,7 @@ namespace CircleCITest.Controllers
     {
         public IActionResult Index()
         {
+            var test = "test commit";
             return View();
         }
 
