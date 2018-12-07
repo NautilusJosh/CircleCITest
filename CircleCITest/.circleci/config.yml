@@ -16,3 +16,11 @@ jobs:
       - run:
           name: Running xUnit tests
           command: dotnet test CirclCITest.Tests
+
+      #- run:
+          #name: Create docker image 
+          #command: could use a .bat file here or something...
+
+      #- run: 
+          #name: publish to integration environment
+          #command:  xcopy or clone or something
