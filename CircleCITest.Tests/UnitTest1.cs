@@ -16,7 +16,7 @@ namespace CircleCITest.Tests
         [Fact]
         public void Test2_Fail()
         {
-            var result = true;
+            var result = false;
 
             Assert.False(result, "True result, should fail");
         }
